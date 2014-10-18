@@ -1,0 +1,76 @@
+<!------------------------------------------------------------------*
+ * File: 		memory.html
+ * Author: 		Agapito Cruz (agapito.cruz@gmail.com)
+ * Contents: 	Simple memory game involving hiding and revealing
+ * 				colored tiles until all matching pairs are found
+ * Comments:	This file was written to demonstrate proficiency
+ * 				in the use of HTML, including the use of the new
+ *				HTML5 structure tags.
+ * 				This is one of three files needed to play the
+ * 				game. The other three are: memory.js and
+ * 				memory.css.
+ ----------------------------------------------------------------- -->
+<!doctype html>
+<html lang="eng us">
+	<head>
+	<meta charset="utf-8">
+	<title>Memory Game</title>
+	<link rel="stylesheet" href="memory.css">
+	</head>
+<body>
+	<div id=wrapper>
+	<header>
+		<h1>MEMORY GAME</h1>
+		<p>Find the matching tiles<span id="time"> </span></p>
+		
+	</header>
+	<section id="gameboard">
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div class="tile">
+			<p>Click Me!</p>
+		</div>
+		<div id="modalMsgBoxContainer"  class="notShown">
+			<div id="modalMsgBox">
+				<p id="msgText" >foo </p>
+				<p>Click here to continue.</p>
+			</div>
+		</div>
+	</section> <!-- close id="gameboard" -->
+	<footer>
+		<input id="newGameButton" type="button" value="New Game">
+	</footer>
+	</div> <!--close id=wrapper -->	
+	<script type="text/javascript" src="memory.js"></script>
+</body>
