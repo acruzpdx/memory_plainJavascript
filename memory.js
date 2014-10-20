@@ -48,6 +48,8 @@ var memoryGame = (function() {
 				seconds = 0;
 				timeSpan = document.getElementById("time")
 				timeSpan.firstChild.nodeValue = "";		
+				element = document.getElementById("modalMsgBoxContainer");
+				element.setAttribute("class","notShown");
 				firstTile = null;
 				secondTile = null;
 				pairsFound = 0;
