@@ -11,36 +11,43 @@
  -------------------------------------------------------------------*/
 /*---- P O S I T I O N  A N D  L A Y O U T ----*/
 body * {
+	box-sizing:border-box;
 	position: relative;
 	margin: 0px;
 	padding: 0px;
 }
 #wrapper {
 	position:relative;
-	width:1350px;
+	width:100%;
 }
 #gameboard {
 	position:relative;
-	width:960px;
-	background-color:gray;
+	width:75%;
+	height:0;
+	padding-bottom:32.5%;
+	overflow:hidden;
+	padding-left:0;
+	padding-right:0;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:5%;
+	margin-bottom:5%;
 }
 .tile {
 	display:inline-block;
 	position:relative;
-	width:145px;
-	height:145px;
-	margin:10px 44px;
+	width:24%;
+	height:0;
+	padding-bottom:13.5%;
 	background-color:black;
-	border: 2px solid white;
+	border: 3px solid white;
 }
 .tile:hover{
-	border: 2px solid yellow;
+	border: 3px solid yellow;
 }
 #wrapper .tile p {
 	position:relative;
-	top: 45px; 
+	margin-top: 20%; 
 }
 #wrapper header p{
 	position: relative;
@@ -60,56 +67,64 @@ body * {
 
 div#modalMsgBoxContainer {
 	position:absolute;
-	width: 960px;
-	height:507px;
+	width: 98%;
+	height:98%;
+	padding-bottom:5%;
 	top:0px;
-	left:0px;
+	/* margin-top:5%; */
+	margin-left:0%;
 	background-color:black;
 	opacity: 0.5;
 }
 div#modalMsgBox {
 	display:block;
-	position:absolute;
-	width:200px;
-	top: 200px;
-	left:380px;
+	position:relative;
+	width:50%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10%;
 	border:2px solid yellow;
 }
 footer {
 	position:relative;
-	height:75px;
+	height:10%;
+	padding-top:2%;
 	background-color:black;
 }
 #newGameButton{
 	display:block;
-	top: 10px;
-	margin:0px auto;
+	margin: 2% auto;
 }
 /*---- F O N T  S E T T I N G S ----*/
 div#wrapper h1 {
+	
+	font-size:5.9vw;
 	color:yellow;
 	text-align: center;
 }
 div#wrapper p {
+	font-size:1.5vw;
 	color:white;
 }
 #wrapper .tile > p {
+	font-size:1.0vw;
 	color:yellow;
 	text-align:center;
 	
 }
 div#modalMsgBox p {
-	color:yellow;
+	font-size:2vw;
+	color:white;
 	text-align:center;
 	padding-top:5px;
 	padding-bottom:5px;
 }
 /*---- C O L O R   S E T T I N G S ----*/
 div#wrapper{
-	background-color:black;
+	background-color:#042037;
 }
 div#gameboard{
-	background-color:gray;
+	background-color:black;
 }
 .green_card{
 	background-color:green;
