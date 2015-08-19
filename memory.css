@@ -30,8 +30,8 @@ body * {
 	padding-right:0;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:5%;
-	margin-bottom:5%;
+	/*margin-top:5%;
+	margin-bottom:5%;*/
 }
 .tile {
 	display:inline-block;
@@ -43,7 +43,7 @@ body * {
 	border: 3px solid white;
 }
 .tile:hover{
-	border: 3px solid yellow;
+	border: 3px solid red;
 }
 #wrapper .tile p {
 	position:relative;
@@ -56,7 +56,6 @@ body * {
 #wrapper header span {
 	position:relative;
 	float:right;
-	color:white;
 }
 .invisible {
 	visibility:hidden;
@@ -92,19 +91,27 @@ footer {
 	background-color:black;
 }
 #newGameButton{
-	display:block;
-	margin: 2% auto;
+    display:block;
+    width:100px;
+    //text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15%;
 }
 /*---- F O N T  S E T T I N G S ----*/
+body {
+    font-family:sans-serif;
+}
 div#wrapper h1 {
 	
 	font-size:5.9vw;
 	color:yellow;
 	text-align: center;
 }
-div#wrapper p {
+div#wrapper > p {
 	font-size:1.5vw;
-	color:white;
+	color:black;
+    background-color:blue;
 }
 #wrapper .tile > p {
 	font-size:1.0vw;
@@ -121,10 +128,10 @@ div#modalMsgBox p {
 }
 /*---- C O L O R   S E T T I N G S ----*/
 div#wrapper{
-	background-color:#042037;
+	background-color:white;
 }
 div#gameboard{
-	background-color:black;
+	background-color:white;
 }
 .green_card{
 	background-color:green;
