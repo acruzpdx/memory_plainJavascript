@@ -198,6 +198,7 @@ var view = (function View() {
         }
         // Clear the timer string value
         timeSpan.firstChild.nodeValue= "";
+        seconds = 0;
         // Set the screen tiles to the 'face down' state
         _setTilesToDefault();
         if (game!= null) {
